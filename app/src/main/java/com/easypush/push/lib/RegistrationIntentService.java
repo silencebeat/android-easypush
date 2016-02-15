@@ -33,7 +33,6 @@ public class RegistrationIntentService extends IntentService {
     @Override
     protected void onHandleIntent(Intent intent) {
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-        Log.d("tes","tes");
         try {
             // [START register_for_gcm]
             // Initially this call goes out to the network to retrieve the token, subsequent calls

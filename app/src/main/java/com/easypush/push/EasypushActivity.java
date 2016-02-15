@@ -25,9 +25,6 @@ public class EasypushActivity extends AppCompatActivity implements View.OnClickL
 
         findViewById(R.id.btnSubscribe).setOnClickListener(this);
         findViewById(R.id.btnSubscribe).setOnClickListener(this);
-
-
-
     }
 
     @Override

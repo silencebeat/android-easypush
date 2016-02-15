@@ -21,31 +21,22 @@ public class PushHelper{
 
     protected final String AUTHENTICATION = "Authentication";
     private RequestListener requestListener;
-    private Activity activity;
-    private boolean isHaveAppId = false;
     private AsyncHttpClient client;
     private boolean isFinish = true;
     private RequestParams params;
     private String deviceId = "";
     private static String APP_ID = "app_id";
     private String baseUrl = "";
-    SharedPreferences sharedPreferences;
+    private SharedPreferences sharedPreferences;
 
     public PushHelper(Activity activity, String baseUrl, String KEY){
         init(activity, baseUrl, KEY, null);
-    }
-
-    @SuppressWarnings("unused")
-    public PushHelper (Activity activity, String baseUrl, String KEY, RequestListener requestListener){
-
-        init(activity, baseUrl, KEY, requestListener);
     }
 
     private void init(Activity activity, String baseUrl, String KEY, RequestListener requestListener){
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(activity);
         this.requestListener = requestListener;
         this.baseUrl = baseUrl;
-        this.activity = activity;
         client = new AsyncHttpClient(true, 80, 443);
         client.setTimeout(10000);
         client.setResponseTimeout(10000);
@@ -58,15 +49,15 @@ public class PushHelper{
 
     }
 
-    @SuppressWarnings("unused")
-    public void subscribe(String email, String name){
-        submit(email, name, "", null);
-    }
-
-    @SuppressWarnings("unused")
-    public void subscribe(String email, String name, String imagePath){
-        submit(email, name, imagePath, null);
-    }
+//    @SuppressWarnings("unused")
+//    public void subscribe(String email, String name){
+//        submit(email, name, "", null);
+//    }
+//
+//    @SuppressWarnings("unused")
+//    public void subscribe(String email, String name, String imagePath){
+//        submit(email, name, imagePath, null);
+//    }
 
     public void subscribe(String email, String name, RequestListener requestListener){
         submit(email, name, "", requestListener);
