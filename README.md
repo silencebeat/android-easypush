@@ -6,6 +6,13 @@
   2. easypushlib.jar as library
 
 # how to use
+
+  Put easypushlib.jar into your libs directory, then add this line into dependencies gradle
+  
+  ```
+  compile files ('libs/easypushlib.jar')
+  ```
+  
   Initialize PushHelper class into your activity
   
   ```
