@@ -6,7 +6,7 @@
   2. easypushlib.jar as library
 
 # how to use
-  Initialize pushhelper class into your activity
+  Initialize PushHelper class into your activity
   
   ```
   pushHelper = new PushHelper(this, "http://yourdomain.com", "YOUR_EASYPUSHSERVER_KEY");
