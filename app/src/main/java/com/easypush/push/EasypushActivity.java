@@ -5,8 +5,9 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-import com.easypush.push.lib.PushHelper;
-import com.easypush.push.lib.RequestListener;
+
+import com.easypush.easypushlib.PushHelper;
+import com.easypush.easypushlib.RequestListener;
 
 import org.json.JSONObject;
 
