@@ -32,7 +32,7 @@ public class EasypushActivity extends AppCompatActivity implements View.OnClickL
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btnSubscribe:
-                pushHelper.subscribe("youremail@company.com", "yourname", new RequestListener() {
+                pushHelper.subscribe("youremail_android@company.com", "yourname_android", new RequestListener() {
                     @Override
                     public void onSuccess(String result) {
                         Log.d(TAG, result);

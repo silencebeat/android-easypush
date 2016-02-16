@@ -18,7 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <meta-data android:name="GOOGLE_APP_ID" android:value=""/>
+        <meta-data android:name="GOOGLE_APP_ID" android:value="544293443678"/>
 
         <activity android:name=".EasypushActivity">
             <intent-filter>
